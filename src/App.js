@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
+import { movies, profiles, users } from './data'
 import ListContacts from './ListContacts'
+import ListData from './ListData'
+import PopularMovie from './PopularMovie'
 
 const contacts = [
   {
@@ -27,7 +30,10 @@ class App extends Component {
   render() {
     return (
       <div>
-        <ListContacts contacts={contacts} />
+        {/* <ListContacts contacts={contacts} /> */}
+        <h2>Favorite Movie</h2>
+        <PopularMovie profiles={profiles} users={users} movies={movies} />
+        
         </div>
     )
   }
